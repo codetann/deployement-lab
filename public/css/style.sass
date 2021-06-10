@@ -1,0 +1,180 @@
+$bg-dark: #303437
+$gb-light: #373B3D
+
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    font-family: "Inter"
+
+body
+    width: 100vw
+    height: 100%
+
+/* navbar */ 
+.navbar
+    background: $bg-dark
+    height: 10vh
+    width: 100%
+    padding: 0 10rem
+    background: $bg-dark
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    .logo
+        font-weight: 800
+        font-size: 32px
+        color: white
+
+    .nav-links
+        display: flex
+
+    .links
+        list-style: none
+        display: flex
+        li
+            color: white
+            margin: 0 1rem
+            font-size: 18px
+            font-weight: 500
+    .social-icons
+        border-left: 2px solid #707070
+        list-style: none
+        display: flex
+        li
+            margin: 0 1rem
+            color: white
+
+.hero
+    width: 100%
+    height: 90vh
+    padding: 0 10rem
+    background: $bg-dark
+    display: flex
+    justify-content: center
+    align-items: center
+
+    .hero-left
+        width: 40vw
+        height: 100%
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        justify-content: center
+
+        .name
+            font-size: 48px
+            font-weight: bold
+            color: white
+
+        hr
+            width: 3rem
+            margin: 1rem 0
+            background: #FFE46B
+            border: none
+            height: 2px
+
+        p
+            width: 70%
+            color: #b4b4b4
+            line-height: 2.5rem
+
+    .hero-right
+        width: 60vw
+        height: 100%
+        display: flex
+        align-items: flex-end
+        justify-content: flex-end
+        background: #2B2B34
+        border-radius: 50%
+        max-width: 600px
+        max-height: 600px
+
+        img
+            height: 30rem
+
+span
+    color: #FFE46B
+
+@media only screen and (max-width: 900px)
+    .navbar
+        display: flex
+        background: $bg-dark
+        height: 10vh
+        padding: 0 1rem !important
+
+        justify-content: space-between
+        align-items: center
+
+        .logo
+            font-weight: 800
+            font-size: 32px
+            color: white
+
+        .nav-links
+            display: flex
+
+        .links
+            list-style: none
+            display: flex
+            li
+                color: white
+                margin: 0 1rem
+                font-size: 14px
+                font-weight: 500
+        .social-icons
+            border-left: 2px solid #707070
+            list-style: none
+            display: none
+        li
+            margin: 0 1rem
+            color: white
+
+    .hero
+        width: 100%
+        height: 90vh
+        background: $bg-dark
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding: 0 1rem !important
+
+        .hero-left
+            width: 100%
+            height: 100%
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+
+            .name
+                font-size: 48px
+                font-weight: bold
+                color: white
+
+            hr
+                width: 3rem
+                margin: 1rem 0
+                background: #FFE46B
+                border: none
+                height: 2px
+
+            p
+                width: 70%
+                color: #b4b4b4
+                line-height: 2.5rem
+
+        .hero-right
+            width: 100%
+            max-width: 380px
+            height: 100%
+
+            display: flex
+            align-items: flex-end
+            justify-content: flex-end
+            background: #2B2B34
+            border-radius: 50%
+
+            img
+                height: 20rem
